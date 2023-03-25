@@ -2,6 +2,7 @@ export class Product {
 
     // Typescript class for Product.  Matches JSON data coming back from 
     // Spring Data REST API.
+    // ( Spring Boot service )
 
     constructor(public sku: string,
                 public name: string,

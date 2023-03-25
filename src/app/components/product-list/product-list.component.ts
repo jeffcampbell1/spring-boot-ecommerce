@@ -12,11 +12,13 @@ export class ProductListComponent implements OnInit {
 
   // integrating our service w/ angular component
 
+  // set up a property for Products .. 
   products: Product[] = [];
 
-  // inject our product service
+  // inject our product service dependency
   constructor(private productService: ProductService) {}
 
+  // similar to @PostConstruct
   ngOnInit(): void {
     this.listProducts();
   }
