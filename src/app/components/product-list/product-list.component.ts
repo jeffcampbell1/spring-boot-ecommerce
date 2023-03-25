@@ -18,7 +18,7 @@ export class ProductListComponent implements OnInit {
   // inject our product service dependency
   constructor(private productService: ProductService) {}
 
-  // similar to @PostConstruct
+  // similar to @PostConstruct .. calling list products method.
   ngOnInit(): void {
     this.listProducts();
   }
