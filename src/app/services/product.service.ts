@@ -10,7 +10,7 @@ import { map } from 'rxjs/operators';
 export class ProductService {
 
   // can go in a config file later..the endpoint we are going to call
-  private baseUrl = 'http://localhost:8080/api/products';
+  private baseUrl = 'http://localhost:8080/api/products?size=100';
 
 
   // inject the http client..angular has dependency injection capabilities
