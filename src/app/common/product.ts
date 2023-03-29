@@ -4,7 +4,9 @@ export class Product {
     // Spring Data REST API.
     // ( Spring Boot service )
 
-    constructor(public sku: string,
+    constructor(
+                public id: number,
+                public sku: string,
                 public name: string,
                 public description: string,
                 public unitPrice: number,
