@@ -5,7 +5,7 @@ export class Product {
     // ( Spring Boot service )
 
     constructor(
-                public id: number,
+                public id: string,
                 public sku: string,
                 public name: string,
                 public description: string,
