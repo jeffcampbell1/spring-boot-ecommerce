@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { CartItem } from '../common/cart-item';
 import { Subject } from 'rxjs';
 
-
 @Injectable({
   providedIn: 'root'
 })
@@ -26,6 +25,8 @@ export class CartService {
 
       existingCartItem = this.cartItems.find( tempCartItem => tempCartItem.id === theCartItem.id );
 
+      // check if we found it
+      alreadyExistsInCart = (existingCartItem != undefined);
     }
 
     if (alreadyExistsInCart) {
@@ -38,9 +39,7 @@ export class CartService {
     }
 
     // compute cart total price and total quantity
-    console.log(`does it ever get here?`);
     this.computeCartTotals();
-    console.log(`...or even here?`);
   }
 
   computeCartTotals() {
